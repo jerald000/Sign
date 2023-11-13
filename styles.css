@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff; /* Set the background color to white */
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.column {
+    flex: 1;
+}
+
+.help {
+    text-align: right;
+}
+
+a {
+  text-decoration: none; /* Remove underline from links */
+  }
+  
+  #text {
+    font-weight: bold;
+        font-family: Arial, sans-serif;
+        font-size: 20px;
+        color: #333;
+        margin: 0; /* Set margin to 0 to reduce the gap */
+    }
+
+    #subText {
+        font-family: Arial, sans-serif;
+        font-size: 15px;
+        margin-top: 5px;
+        
+    }
+
+#login-container {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: left; /* Center items horizontally within the container */
+    justify-content: center; /* Center items vertically within the container */
+    width: 300px;
+    margin: 50px auto; /* Center the container horizontally */
+    padding: 20px;
+    background-color: #fff; /* Set the login container background color to white */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+#logo-header {
+    text-align: center; /* Center the text within the logo header */
+    font-size: 20px;
+}
+
+#fillin-container{
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: left; /* Center items horizontally within the container */
+    justify-content: center; /* Center items vertically within the container */
+    width: 300px;
+    margin: 50px auto; /* Center the container horizontally */
+    padding: 20px;
+    background-color: #fff; /* Set the login container background color to white */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+ label {
+        margin-top: 10px;
+    }
+
+input, select {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+    }
+
+
+button {
+  font-size: 20px;
+    background-color: #0f69ff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #003abc; /* Change the background color on hover */
+}
+
+#create{
+    font-size: 15px;
+    background-color: #fff;
+    color: #0f69ff;
+    padding: 10px;
+    border-color: #0f69ff;
+    border: 1px solid #188fff;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+#create:hover {
+    color: #003abc; /* Change the background color on hover */
+}
+
+#forgot{
+  color: #0f69ff;
+  text-align: right;
+}
+
+#forgot:hover {
+    color: #003abc; /* Change the background color on hover */
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Login Page</title>
+</head>
+<body>
+
+    <header>
+        <div class="row">
+            <span class="column">
+                <a href="index.html"><img src="https://s.yimg.com/rz/p/yahoo_frontpage_en-US_s_f_p_bestfit_frontpage_2x.png" alt="Yahoo" class="logo" width="" height="36"></a>
+            </span>
+            <span class="column help txt-align-right">
+                <a href="#">Help</a>
+            </span>
+        </div>
+    </header>
+
+
+    <div id="login-container">
+        <div id="logo-header">
+              <img src="https://s.yimg.com/rz/p/yahoo_frontpage_en-US_s_f_p_bestfit_frontpage_2x.png" alt="Yahoo" class="logo" width="" height="27"><br>
+              <p id="text">Sign in</p>
+              <p id="subText">using your Yahoo account</p>
+        </div>
+
+        <label for="email" id="emailLabel">Email:</label>
+        <input type="text" id="email" name="email" required>
+
+        <div id="password-container" style="display: none;">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+
+        <a id="forgot" href="#">Forgot Password?</a><br>
+
+        <button type="button" onclick="showPassword()">Next</button>
+        <a href="#"><button type="button" id="loginButton" style="display: none;" onclick="login()">Log In</button></a><br>
+        <a href="signup.html"><button type="submit" id="create">Create Account</button></a>
+    </div>
+
+    <script>
+        function showPassword() {
+            // Hide the email label
+            document.getElementById('emailLabel').style.display = 'none';
+
+            // Show the password container and hide the email input
+            document.getElementById('password-container').style.display = 'block';
+            document.getElementById('email').style.display = 'none';
+
+            // Change the button text and show the login button
+            document.getElementById('loginButton').style.display = 'block';
+            document.querySelector('button').style.display = 'none';
+        }
+
+        // function login() {
+        //     // Placeholder for login action
+        //     alert("Login button clicked. Simulating login action.");
+        // }
+    </script>
+
+</body>
+</html>
